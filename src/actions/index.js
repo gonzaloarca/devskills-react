@@ -17,7 +17,6 @@ export const createMember = (formValues) => async (dispatch) => {
 
 		switch (res.status) {
 			case 400:
-				console.log(typeof res.data.message);
 				dispatch({ type: CREATE_MEMBER_ERROR, payload: res.data.message });
 				return;
 			default:
