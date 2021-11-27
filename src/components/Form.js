@@ -100,7 +100,7 @@ const validate = (formValues) => {
 		errors.lastName = getLengthMessage("Last Name", MINIMUM_LENGTH);
 	}
 	if (!validLength(formValues.address, MINIMUM_LENGTH)) {
-		errors.lastName = getLengthMessage("Address", MINIMUM_LENGTH);
+		errors.address = getLengthMessage("Address", MINIMUM_LENGTH);
 	}
 	if (!SSN_PATTERN.test(formValues.ssn)) {
 		errors.ssn = "You must enter a valid SSN";
